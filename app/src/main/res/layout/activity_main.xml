@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <TextView
+        android:id="@+id/textView_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How far is one Wikipedia"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/textView_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="6dp"
+        android:text="article from another"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_logo"
+        app:layout_constraintStart_toStartOf="@+id/textView_logo"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actv_startArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#3F51B5"
+        android:completionHint="Select start, case-sensitive!"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="Start article"
+        android:dropDownAnchor="@id/actv_startArticle"
+        app:layout_constraintEnd_toEndOf="@+id/textView_description"
+        app:layout_constraintStart_toStartOf="@+id/textView_description"
+        app:layout_constraintTop_toBottomOf="@+id/textView_description" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actv_goalArticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3F51B5"
+        android:completionHint="Select goal, case-sensitive!"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="Goal article"
+        android:dropDownAnchor="@id/actv_goalArticle"
+        app:layout_constraintEnd_toEndOf="@+id/actv_startArticle"
+        app:layout_constraintStart_toStartOf="@+id/actv_startArticle"
+        app:layout_constraintTop_toBottomOf="@+id/actv_startArticle" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Find path"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/actv_goalArticle"
+        app:layout_constraintStart_toStartOf="@+id/actv_goalArticle"
+        app:layout_constraintTop_toBottomOf="@+id/actv_goalArticle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
