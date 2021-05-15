@@ -1,5 +1,7 @@
 # WikiSteps
-Android app, main function: to find shortest path between two Wikipedia articles. 
+[Demo](https://youtu.be/AP7DuDFvzWY)
+
+Android app, main function: to find shortest path between two Wikipedia articles.
 
 The app shows how many steps between articles, how long the search took, how many pages were visited, how many titles were checked and the actual path with steps. User can visit any step to get short description and main image of each page in the path.
 
